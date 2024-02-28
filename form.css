@@ -1,0 +1,33 @@
+@font-face {
+    font-family: coolFont;
+    src: url(Norse-Bold.otf)
+}
+
+p {
+    font-family: coolFont;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.images, .content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+img.backgroundImage {
+    width: 500px;
+    height: 1000px;
+}
+
+img.odinLogo {
+    border: 1px solid black;
+    width: 500px;
+    height: 80px;
+}
