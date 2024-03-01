@@ -10,24 +10,111 @@ p {
 body {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 0 300px;
+    background-color: black;
 }
 
-.images, .content {
+.images, .form {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+}
+
+.images {
+    position:relative;
 }
 
 img.backgroundImage {
     width: 500px;
-    height: 1000px;
+    height: 100vh;
 }
 
-img.odinLogo {
-    border: 1px solid black;
+div.logoContainer {
+    position: absolute;
+    background: rgba(0,0,0, 0.5);
+    top: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 500px;
-    height: 80px;
+    height: 130px;
+} 
+
+img.odinLogo {
+    width:100px;
+    height: 130px;
 }
+
+p.odin {
+    color: white;
+    font-size: 80px;
+}
+
+form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.h2, 
+div.bottomContent {
+    background-color: whitesmoke;
+}
+
+div.h2 {
+    padding: 100px 50px 40px;
+}
+
+div.rows {
+    display: flex; 
+    flex-direction: row;
+    gap: 150px;
+}
+
+label, input {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+input {
+    margin-bottom: 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 5px;
+    height: 20px;
+    width: 200px;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 1px;
+}
+
+input.error:invalid {
+    border-color: red;
+}
+
+div.bottomContent {
+    padding: 30px 40px;
+    height: 100%;
+}
+
+button {
+    background-color: #596D48;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 180px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+
+
+

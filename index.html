@@ -9,60 +9,56 @@
 <body>
     <div class="images">
         <div>
-            <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="Photo of green leaves taken by Halie West on Unsplash" class="backgroundImage">
+            <img class="backgroundImage" src="halie-west-25xggax4bSA-unsplash.jpg" alt="Photo of green leaves taken by Halie West on Unsplash">
         </div>
 
-        <div>
-            <img src="odin-lined.png" alt="odinLogo" class="odinLogo">
-            <p>ODIN</p>
+        <div class="logoContainer">
+            <img class="odinLogo" src="odin-lined.png" alt="odinLogo">
+            <p class="odin">ODIN</p>
         </div>
     </div>
-    <div class="content">
-        <div>
-            <h1>
-                <strong> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</strong>
-            </h1>
-            <h1>
+    <form action="#" method="post">
+        <div class="h2">
+            <h2>
+                <strong> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</strong> <br>
                 <strong>Sign up <em>now</em> to get started.</strong>
-            </h1>
-            <h1>
+            </h2>
+            <h2>
                 <strong>You <em>know</em> you want to.</strong>
-            </h1>
+            </h2>
         </div>
-
-        <div class="form-title">
-            <h2><strong>Let's do this!</strong></h2>
-        </div>
-
         <div class="form">
-            <form action="#" method="post">
-                <label for="firstName">FIRST NAME*</label>
-                <input type="text" id="firstName" value="" placeholder="Thor" required>
 
-                <label for="lastName">LAST NAME*</label>
-                <input type="text" id="lastName" value="" placeholder="Odinson" required>
+            <h2><strong>Let's do this!</strong></h2>
 
-                <label for="userEmail">EMAIL*</label>
-                <input type="email" id="userEmail" required>
-
-                <label for="phoneNumber">PHONE NUMBER</label>
-                <input type="number" id="phoneNumber">
-
-                <label for="password">PASSWORD*</label>
-                <input type="password" id="password" class="error" required>
-
-                <label for="confirmPassword">CONFIRM PASSWORD*</label>
-                <input type="password" id="confirmPassword" class="error" required>
-            </form>
-        </div>
-
-        <div class="submitButton">
-            <button type="submit">Create Account</button>
-        </div>
-
-        <div class="logIn">
-            <h2>Already have an account? Log in</h2>
-        </div>   
-    </div>   
+            <div class="rows">
+                <div class="firstRow">
+                    <label for="firstName">FIRST NAME *</label>
+                    <input type="text" id="firstName" value="" placeholder="Thor" required>
+        
+                    <label for="userEmail">EMAIL *</label>
+                    <input type="email" id="userEmail" required>
+        
+                    <label for="password">PASSWORD *</label>                  
+                    <input type="password" id="password" class="error" required>
+                </div>
+                <div class="SecondRow">
+                    <label for="lastName">LAST NAME *</label>
+                    <input type="text" id="lastName" value="" placeholder="Odinson" required>
+        
+                    <label for="phoneNumber">PHONE NUMBER</label>        
+                    <input type="number" id="phoneNumber">
+        
+                    <label for="confirmPassword">CONFIRM PASSWORD *</label>
+                    <input type="password" id="confirmPassword" class="error" required>
+                </div>  
+            </div>
+        </div> 
+        <div class="bottomContent">
+            <button type="submit">Create Account</button>    
+            <h3>Already have an account? <a href="">Log in</a></h3>
+        </div>               
+    </form>
+  
 </body>
 </html>
